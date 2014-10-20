@@ -50,7 +50,7 @@ header("Content-type: text/xml");
 //   calendar address.  For your default calendar, it's just your gmail
 //   address before the "@gmail.com"
 
-    $feed = "https://www.google.com/calendar/feeds/5jp8dgr34i6gogusn1o9kvc5ds%40group.calendar.google.com/" .
+    $feed = "https://www.google.com/calendar/feeds/8topte2rmjjkjmev61f69oelk8%40group.calendar.google.com" .
         "public/full?orderby=starttime&singleevents=true&" .
         "sortorder=ascending&" .
 	"start-min=" . $right_now . "&" .
@@ -79,7 +79,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 
 <channel>
 
-<title>SCC Faribault Events</title>\n";
+<title>SCC Academic Calendar</title>\n";
 
 // The next few lines link this XML page to the HTML page formed by
 //  the other script.
@@ -87,16 +87,16 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 // The next line contains the address of your feed, i.e., the very
 //  file you're editing right now
 
-echo "<atom:link href=\"http://tjh.pw/scc-notifications-server/events/sccfbevents.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
+echo "<atom:link href=\"http://tjh.pw/scc-notifications-server/sccac.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
 
 echo "
-<description>SCC Faribault Events</description>
+<description>SCC Academic Calendar</description>
 
 <language>en</language>
 
 <webMaster>tylerholmgren@tjh.pw (Tyler Holmgren)</webMaster>
 
-<category>Events</category>";
+<category>Academic</category>";
 
 // pubDate and lastBuildDate are set to right now
 

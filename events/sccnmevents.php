@@ -87,7 +87,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 // The next line contains the address of your feed, i.e., the very
 //  file you're editing right now
 
-echo "<atom:link href=\"http://tjh.pw/scc-notifications-server/sccnmevents.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
+echo "<atom:link href=\"http://tjh.pw/scc-notifications-server/events/sccnmevents.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
 
 echo "
 <description>SCC North Mankato Events</description>
