@@ -1,0 +1,8 @@
+application: scc-notifications-server
+version: 2
+runtime: php
+api_version: 1
+
+handlers:
+- url: /.*
+  script: sccnmevents.php
