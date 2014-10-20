@@ -50,7 +50,7 @@ header("Content-type: text/xml");
 //   calendar address.  For your default calendar, it's just your gmail
 //   address before the "@gmail.com"
 
-    $feed = "http://www.google.com/calendar/feeds/n5tqq9gp1ku7rel462df55a704%40group.calendar.google.com/" .
+    $feed = "https://www.google.com/calendar/feeds/5jp8dgr34i6gogusn1o9kvc5ds%40group.calendar.google.com/" .
         "public/full?orderby=starttime&singleevents=true&" .
         "sortorder=ascending&" .
 	"start-min=" . $right_now . "&" .
@@ -79,7 +79,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 
 <channel>
 
-<title>SCC North Mankato Events</title>\n";
+<title>SCC Faribault Events</title>\n";
 
 // The next few lines link this XML page to the HTML page formed by
 //  the other script.
@@ -89,10 +89,10 @@ echo "
 // The next line contains the address of your feed, i.e., the very
 //  file you're editing right now
 
-echo "<atom:link href=\"http://tjh.pw/scc-notifications-server/sccnmevents.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
+echo "<atom:link href=\"http://tjh.pw/scc-notifications-server/sccfbevents.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
 
 echo "
-<description>SCC North Mankato Events</description>
+<description>SCC Faribault Events</description>
 
 <language>en</language>
 
