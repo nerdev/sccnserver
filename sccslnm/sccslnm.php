@@ -52,7 +52,7 @@ header("Content-type: text/xml");
 //   calendar address.  For your default calendar, it's just your gmail
 //   address before the "@gmail.com"
 
-    $feed = "https://www.google.com/calendar/feeds/s377a9ptglfvjsk5tcqgem3fkg%40group.calendar.google.com/" .
+    $feed = "https://www.google.com/calendar/feeds/n5tqq9gp1ku7rel462df55a704%40group.calendar.google.com/" .
         "public/full?orderby=starttime&singleevents=true&" .
         "sortorder=ascending&" .
 	"start-min=" . $right_now . "&" .
@@ -81,7 +81,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 
 <channel>
 
-<title>SCC Student Life Faribault</title>\n";
+<title>SCC Student Life North Mankato</title>\n";
 
 // The next few lines link this XML page to the HTML page formed by
 //  the other script.
@@ -89,10 +89,10 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 // The next line contains the address of your feed, i.e., the very
 //  file you're editing right now
 
-echo "<atom:link href=\"http://tjh.pw/scc-notifications-server/life/sccslfb.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
+echo "<atom:link href=\"http://stone-bongo-739.appspot.com/sccslnm/sccslnm.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
 
 echo "
-<description>SCC Student Life Faribault</description>
+<description>SCC Student Life North Mankato</description>
 
 <language>en</language>
 

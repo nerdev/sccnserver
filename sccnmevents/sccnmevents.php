@@ -52,7 +52,7 @@ header("Content-type: text/xml");
 //   calendar address.  For your default calendar, it's just your gmail
 //   address before the "@gmail.com"
 
-    $feed = "https://www.google.com/calendar/feeds/8topte2rmjjkjmev61f69oelk8%40group.calendar.google.com" .
+    $feed = "http://www.google.com/calendar/feeds/n5tqq9gp1ku7rel462df55a704%40group.calendar.google.com/" .
         "public/full?orderby=starttime&singleevents=true&" .
         "sortorder=ascending&" .
 	"start-min=" . $right_now . "&" .
@@ -81,7 +81,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 
 <channel>
 
-<title>SCC Academic Calendar</title>\n";
+<title>SCC North Mankato Events</title>\n";
 
 // The next few lines link this XML page to the HTML page formed by
 //  the other script.
@@ -89,16 +89,16 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 // The next line contains the address of your feed, i.e., the very
 //  file you're editing right now
 
-echo "<atom:link href=\"http://tjh.pw/scc-notifications-server/sccac.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
+echo "<atom:link href=\"http://stone-bongo-739.appspot.com/sccnmevents/sccnmevents.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
 
 echo "
-<description>SCC Academic Calendar</description>
+<description>SCC North Mankato Events</description>
 
 <language>en</language>
 
 <webMaster>tylerholmgren@tjh.pw (Tyler Holmgren)</webMaster>
 
-<category>Academic</category>";
+<category>Events</category>";
 
 // pubDate and lastBuildDate are set to right now
 

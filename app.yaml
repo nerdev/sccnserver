@@ -1,8 +1,23 @@
 application: scc-notifications-server
-version: 2
+version: 3
 runtime: php
 api_version: 1
 
 handlers:
 - url: /.*
+  script: not_found.php
+
+- url: /sccnmevents/.*
   script: sccnmevents.php
+
+- url: /sccfbevents/.*
+  script: sccfbevents.php
+
+- url: /sccslnm/.*
+  script: sccslnm.php
+
+- url: /sccslfb/.*
+  script: sccslfb.php
+
+- url: /sccac/.*
+  script: sccac.php
