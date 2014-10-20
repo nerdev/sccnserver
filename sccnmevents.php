@@ -84,8 +84,6 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 // The next few lines link this XML page to the HTML page formed by
 //  the other script.
 
-echo "
-
 // The next line contains the address of your feed, i.e., the very
 //  file you're editing right now
 
