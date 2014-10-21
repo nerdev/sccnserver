@@ -3,3 +3,12 @@ version: 4
 runtime: php
 api_version: 1
 
+handlers:
+- url: /(.+\.php)$
+  script: \1
+
+- url: /static
+  static_dir: static
+
+- url: /.*
+  script: index.php
