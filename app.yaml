@@ -1,8 +1,8 @@
 application: scc-notifications-server
-version: 6
+version: 2
 runtime: php
 api_version: 1
 
 handlers:
-- url: /sccap/(.+\.php)
-  script: /sccap/(.+\.php)
+- url: /sccap.php
+  script: sccap.php
