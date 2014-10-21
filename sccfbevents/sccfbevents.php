@@ -1,7 +1,5 @@
 <?php
 
-libxml_disable_entity_loader(false);
-
 // The "header" command tells the browser that what's coming in
 //  is XML, not an HTML web page
 
