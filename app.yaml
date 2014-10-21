@@ -4,5 +4,3 @@ runtime: php
 api_version: 1
 
 handlers:
-- url: /(.+\.php)$
-  script: \1
