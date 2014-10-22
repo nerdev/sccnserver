@@ -50,7 +50,7 @@ header("Content-type: text/xml");
 //   calendar address.  For your default calendar, it's just your gmail
 //   address before the "@gmail.com"
 
-    $feed = "http://www.google.com/calendar/feeds/n5tqq9gp1ku7rel462df55a704%40group.calendar.google.com/" .
+    $feed = "https://www.google.com/calendar/feeds/s377a9ptglfvjsk5tcqgem3fkg%40group.calendar.google.com/" .
         "public/full?orderby=starttime&singleevents=true&" .
         "sortorder=ascending&" .
 	"start-min=" . $right_now . "&" .
@@ -79,7 +79,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 
 <channel>
 
-<title>SCC North Mankato Events</title>\n";
+<title>SCC Student Life Faribault</title>\n";
 
 // The next few lines link this XML page to the HTML page formed by
 //  the other script.
@@ -87,16 +87,16 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 // The next line contains the address of your feed, i.e., the very
 //  file you're editing right now
 
-echo "<atom:link href=\"http://sccnserver-tylerjholmgren.rhcloud.com/sccnmevents.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
+echo "<atom:link href=\"http://sccnserver-tylerjholmgren.rhcloud.com/sccslfb.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
 
 echo "
-<description>SCC North Mankato Events</description>
+<description>SCC Student Life Faribault</description>
 
 <language>en</language>
 
 <webMaster>tylerholmgren@tjh.pw (Tyler Holmgren)</webMaster>
 
-<category>Events</category>";
+<category>Student Life</category>";
 
 // pubDate and lastBuildDate are set to right now
 
@@ -161,7 +161,7 @@ echo "
 //  You can pick off other tags, of course, but these are the ones
 //   I need.
 
-	// Added description of events.
+	 // Added description of events.
 
 	$contents = $entry->getElementsByTagName("content");
 	$content = $contents->item(0)->nodeValue;
@@ -181,8 +181,8 @@ echo "
             echo "<item>\n";
             echo "<title>$title</title>\n";
             echo "<link>$link</link>\n";
-	    echo "<date>Starts: $when</date>\n";
-            echo "<description>Where: $where<br/>Description: $content</description>\n";
+	          echo "<date>Starts: $when</date>\n";
+            echo "<description>$content</description>\n";
             echo "<guid isPermaLink=\"true\">$link</guid>\n";
             echo "</item>\n\n";
 	}

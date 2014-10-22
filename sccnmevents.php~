@@ -181,7 +181,7 @@ echo "
             echo "<item>\n";
             echo "<title>$title</title>\n";
             echo "<link>$link</link>\n";
-	    echo "<date>Starts: $when</date>\n";
+	          echo "<date>Starts: $when</date>\n";
             echo "<description>Where: $where<br/>Description: $content</description>\n";
             echo "<guid isPermaLink=\"true\">$link</guid>\n";
             echo "</item>\n\n";
