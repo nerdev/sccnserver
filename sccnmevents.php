@@ -161,12 +161,17 @@ echo "
 //  You can pick off other tags, of course, but these are the ones
 //   I need.
 
-	      $contents = $entry->getElementsByTagName("content");
-	      $content = $contents->item(0)->nodeValue;
+// Added description of events.
+
+	$contents = $entry->getElementsByTagName("content");
+	$content = $contents->item(0)->nodeValue;
 
         $content = str_replace(" & ", " &amp; ", $content);
 
-        // $content = substr($content, 0, 250);
+// Added where the event is.
+
+	$whereabouts = $entry->getElementsByTagName("where");	
+	$where = $whereabouts->item(0)->nodeValue;
 
 //  Now we print an XML item for this entry.  Again note we escape
 //   quotation marks that are needed in the XML page.  And we've
@@ -177,7 +182,7 @@ echo "
             echo "<title>$title</title>\n";
             echo "<link>$link</link>\n";
 	          echo "<date>Starts: $when</date>\n";
-            echo "<description>$content</description>\n";
+            echo "<description>Where: $where<br/>Description: $content</description>\n";
             echo "<guid isPermaLink=\"true\">$link</guid>\n";
             echo "</item>\n\n";
 	}
