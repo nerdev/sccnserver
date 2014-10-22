@@ -171,7 +171,7 @@ echo "
 // Added where the event is.
 
 	$whereabouts = $entry->getElementsByTagName("where");	
-	$where = $whereabouts->item(0)->nodeValue;
+	$where = $whereabouts->item(0)->value;
 
 //  Now we print an XML item for this entry.  Again note we escape
 //   quotation marks that are needed in the XML page.  And we've
