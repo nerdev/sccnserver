@@ -1,7 +1,5 @@
 <?php
 
-libxml_disable_entity_loader(false);
-
 // The "header" command tells the browser that what's coming in
 //  is XML, not an HTML web page
 
@@ -89,7 +87,7 @@ echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 // The next line contains the address of your feed, i.e., the very
 //  file you're editing right now
 
-echo "<atom:link href=\"http://stone-bongo-739.appspot.com/sccac/sccac.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
+echo "<atom:link href=\"http://sccnserver-tylerjholmgren.rhcloud.com/sccac.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
 
 echo "
 <description>SCC Academic Calendar</description>
