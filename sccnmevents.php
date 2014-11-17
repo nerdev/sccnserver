@@ -18,8 +18,6 @@ header("Content-type: text/xml");
         "sortorder=ascending&" .
 	"start-min=" . $right_now . "&" .
         "start-max=" . $two_weeks;
-        $web = $entry->getElementsByTagName( "link" );
-        $link = $web->item(0)->getAttributeNode("href")->value;
     // Create a new document to hold the rss feed
     $doc = new DOMDocument();
     $doc->load( $feed );
