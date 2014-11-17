@@ -16,7 +16,7 @@ header("Content-type: text/xml");
     $feed = "https://www.google.com/calendar/feeds/8topte2rmjjkjmev61f69oelk8%40group.calendar.google.com" .
         "public/full?orderby=starttime&singleevents=true&" .
         "sortorder=ascending&" .
-	      "start-min=" . $right_now . "&" .
+        "start-min=" . $right_now . "&" .
         "start-max=" . $two_weeks;
     // Create a new document to hold the rss feed
     $doc = new DOMDocument();
