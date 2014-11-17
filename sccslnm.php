@@ -25,9 +25,9 @@ header("Content-type: text/xml");
     echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
           <rss version=\"2.0\" xmlns:atom=\"http://www.w3.org/2005/Atom\">
           <channel>
-          <title>SCC Academic Calendar</title>\n";
+          <title>SCC Student Life North Mankato</title>\n";
     echo "<atom:link href=\"http://sccnserver-tylerjholmgren.rhcloud.com/sccac.php\" rel=\"self\" type=\"application/rss+xml\" />\n";
-    echo "<description>SCC Academic Calendar</description>
+    echo "<description>SCC Student Life North Mankato</description>
           <language>en</language>
           <webMaster>tylerholmgren@tjh.pw (Tyler Holmgren)</webMaster>
           <category>Academic</category>";
